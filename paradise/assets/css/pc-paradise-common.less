@@ -1,0 +1,49 @@
+
+
+ @color:rgb(224, 220, 220);
+
+
+body{
+  background-color: @color;
+
+
+
+
+  
+}
+.paradise-page-content{
+  height: 1000px;
+}
+
+
+  
+  /* Create two equal columns that floats next to each other */
+  .heder-product-list-left-column {
+    float: left;
+    width: 28%;
+    padding: 10px;
+    margin-right: 6px;
+    border-radius: 5px;
+    height: 100%;
+  }
+  .heder-product-list-right-column {
+    float: left;
+    width: 69%;
+    padding: 10px;
+    border-radius: 5px;
+    height: 100%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .heder-product-list-left-column,.heder-product-list-right-column {
+      width: 100%;
+    }
+  }
